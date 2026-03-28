@@ -19,7 +19,6 @@ function Home() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Carrusel automático
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % HERO_IMAGES.length);
@@ -48,25 +47,16 @@ function Home() {
 
       {/* Hero Section con carrusel de fondo */}
       <section id="inicio" className="relative h-[500px] md:h-[600px] overflow-hidden">
-        {/* Imágenes del carrusel */}
         {HERO_IMAGES.map((img, index) => (
           <div
             key={index}
             className="absolute inset-0 transition-opacity duration-1000"
             style={{ opacity: index === currentSlide ? 1 : 0 }}
           >
-            <img
-              src={img}
-              alt={`Hero ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
+            <img src={img} alt={`Hero ${index + 1}`} className="w-full h-full object-cover" />
           </div>
         ))}
-
-        {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-navy-900 opacity-60"></div>
-
-        {/* Contenido encima del carrusel */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
             Hacer Vivir - Casas Prefabricadas
@@ -74,8 +64,6 @@ function Home() {
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl drop-shadow">
             Construimos el hogar de tus sueños con calidad, diseño y compromiso
           </p>
-
-          {/* Indicadores del carrusel */}
           <div className="flex gap-2 mt-8">
             {HERO_IMAGES.map((_, index) => (
               <button
@@ -92,6 +80,13 @@ function Home() {
 
       {/* Separador */}
       <div className="h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+      {/* Título Nuestros Proyectos */}
+      <div className="py-10 bg-slate-50">
+        <h2 className="text-4xl font-bold text-center text-navy-900">
+          Nuestros Proyectos
+        </h2>
+      </div>
 
       {/* Filtros */}
       <section className="bg-white shadow-md border-t-2 border-b-2 border-gray-300">
@@ -144,10 +139,6 @@ function Home() {
       {/* Catálogo */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-navy-900 mb-12">
-            Nuestros Proyectos
-          </h2>
-
           {loading ? (
             <div className="text-center py-20">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-amber-400"></div>
@@ -166,11 +157,7 @@ function Home() {
                   className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 >
                   <div className="relative h-64 overflow-hidden">
-                    <img
-                      src={project.imagenes[0]}
-                      alt={project.nombre}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={project.imagenes[0]} alt={project.nombre} className="w-full h-full object-cover" />
                     <div className="absolute top-4 right-4 bg-amber-400 text-navy-900 px-3 py-1 rounded-full text-sm font-bold capitalize">
                       {project.categoria}
                     </div>
@@ -266,7 +253,7 @@ function Home() {
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Métodos de Pago</h3>
               <p className="text-gray-600">
-                Aceptamos crédito, débito y plan separe para que puedas adquirir tu proyecto de la manera más cómoda.
+                Aceptamos tarjetas de crédito y débito para que puedas adquirir tu proyecto de la manera más cómoda.
               </p>
             </div>
             <div className="text-center p-6">
