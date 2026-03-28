@@ -223,7 +223,7 @@ function Home() {
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Economía</h3>
               <p className="text-gray-600">
-                Por ser un sistema de construcción industrializado los costos son más bajos que los tradicionales.
+                Construye más por menos. Nuestras casas prefabricadas tienen un costo hasta un 40% menor comparado con la construcción tradicional, sin sacrificar calidad ni acabados. Una inversión inteligente para su proyecto.
               </p>
             </div>
             <div className="text-center p-6">
@@ -232,7 +232,7 @@ function Home() {
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Rapidez</h3>
               <p className="text-gray-600">
-                Este sistema permite que el tiempo de fabricación y montaje sea mucho menor al tradicional.
+                Este sistema constructivo permite que el tiempo de fabricación y ensamble sea menor en comparación con el tradicional.
               </p>
             </div>
             <div className="text-center p-6">
@@ -241,7 +241,7 @@ function Home() {
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Calidad y Respaldo</h3>
               <p className="text-gray-600">
-                Nuestra construcción tiene garantía estructural de por vida, gracias a la calidad de los materiales.
+                Nuestra compañía cuenta con una experiencia de más de 23 años en el mercado e implementa los mejores materiales en sus proyectos.
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ function Home() {
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Métodos de Pago</h3>
               <p className="text-gray-600">
-                Aceptamos tarjetas de crédito y débito para que puedas adquirir tu proyecto de la manera más cómoda.
+                Te ofrecemos un plan separe para que adquieras tu proyecto a mediano plazo sin el pago de intereses. También aceptamos tarjetas de crédito y débito para tu comodidad.
               </p>
             </div>
             <div className="text-center p-6">
