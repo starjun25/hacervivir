@@ -193,8 +193,8 @@ function Home() {
           <h2 className="text-4xl font-bold text-center text-navy-900 mb-8">Nosotros</h2>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto leading-relaxed">
             Prefabricados Hacer Vivir es una empresa privada que hace parte del gremio de la construcción,
-            comprometida con sus clientes para ofrecer altos estándares de calidad y servicio en la construcción
-            de casas, superando sus expectativas.
+            comprometida desde hace mas de 23 años con sus clientes, ofrecer altos estándares de calidad y servicio en la construcción
+            de casas prefabricadas, superando sus expectativas.
           </p>
         </div>
       </section>
@@ -213,7 +213,7 @@ function Home() {
             Ventajas de las Casas Prefabricadas
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Nuestro sistema constructivo ofrece múltiples beneficios
+            Nuestro sistema constructivo ofrece múltiples beneficio:  El sistema constructivo de Hacer Vivir,  se basa en la implementación para muros  con  paneles autoportantes de concreto reforzado o también  con bloques de arcilla cocida, alargados y huecos, ambos materiales  representan dos alternativas diferentes y eficientes, los cuales  ensamblados mediante perfiles de lámina galvanizada sobre una cimentación de placa de concreto y sistema de amarre superior, se convierten en un  método vertical sismorresistente que cumple con la norma NSR-10, permitiendo realizar construcciones de hasta dos niveles de forma rápida y económica.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -253,7 +253,7 @@ function Home() {
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Métodos de Pago</h3>
               <p className="text-gray-600">
-                Te ofrecemos un plan separe para que adquieras tu proyecto a mediano plazo sin el pago de intereses. También aceptamos tarjetas de crédito y débito para tu comodidad.
+                Te ofrecemos diferentes alternativas de pago, recibimos tarjeta de crédito, ven y separa tu proyecto y afíliate al plan separe a mediano plazo.
               </p>
             </div>
             <div className="text-center p-6">
