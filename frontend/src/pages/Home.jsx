@@ -142,7 +142,7 @@ function Home() {
           {loading ? (
             <div className="text-center py-20">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-amber-400"></div>
-              <p className="mt-4 text-gray-600">Cargando proyectos...</p>
+              <p className="mt-4 text-gray-800 text-lg">Cargando proyectos...</p>
             </div>
           ) : projects.length === 0 ? (
             <div className="text-center py-20">
@@ -164,7 +164,7 @@ function Home() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-navy-900 mb-2">{project.nombre}</h3>
-                    <div className="space-y-2 text-gray-600">
+                    <div className="space-y-2 text-gray-800 text-lg">
                       <p><span className="font-semibold mr-2">Área:</span>{project.area} m²</p>
                       {project.habitaciones && (
                         <p><span className="font-semibold mr-2">Habitaciones:</span>{project.habitaciones}</p>
@@ -191,11 +191,56 @@ function Home() {
       <section id="nosotros" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-navy-900 mb-8">Nosotros</h2>
-          <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto leading-relaxed">
-            Prefabricados Hacer Vivir es una empresa privada que hace parte del gremio de la construcción,
-            comprometida desde hace mas de 23 años con sus clientes, ofrecer altos estándares de calidad y servicio en la construcción
-            de casas prefabricadas, superando sus expectativas.
+          <p className="text-lg text-gray-700 text-justify max-w-4xl mx-auto leading-relaxed mb-16">
+            Prefabricados Hacer Vivir es una empresa privada que hace parte del gremio de la construcción, comprometida
+            desde hace mas de 23 años con sus clientes, ofrecer altos estándares de calidad y servicio en la construcción de
+            casas prefabricadas, superando sus expectativas.
           </p>
+
+          {/* Servicios con imágenes */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="overflow-hidden rounded-lg shadow-lg mb-4 h-64">
+                <img
+                  src="https://res.cloudinary.com/dvibayjii/image/upload/v1780088690/Cargue_dmy42g.jpg"
+                  alt="Fabricación y Cargue"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-navy-900 mb-2">Fabricación y Cargue</h3>
+              <p className="text-gray-800 text-lg text-justify">
+                Fabricamos cada componente de tu hogar con los mejores materiales y los transportamos con conductores calificados hasta el lugar de instalación.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="overflow-hidden rounded-lg shadow-lg mb-4 h-64">
+                <img
+                  src="https://res.cloudinary.com/dvibayjii/image/upload/v1778809138/plancha_cldgor.jpg"
+                  alt="Cimentación y Placa"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-navy-900 mb-2">Cimentación y Placa</h3>
+              <p className="text-gray-800 text-lg text-justify">
+                Construimos la base de tu proyecto con una placa de concreto reforzada, garantizando solidez y durabilidad desde los cimientos.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="overflow-hidden rounded-lg shadow-lg mb-4 h-64">
+                <img
+                  src="https://res.cloudinary.com/dvibayjii/image/upload/v1779557733/WhatsApp_Image_g9sbye.jpg"
+                  alt="Construcción y Ensamble"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-navy-900 mb-2">Construcción y Ensamble</h3>
+              <p className="text-gray-800 text-lg text-justify">
+                Nuestro equipo especializado ensambla cada parte de tu hogar con experiencia y precisión, logrando una construcción rápida y segura.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -212,8 +257,8 @@ function Home() {
           <h2 className="text-4xl font-bold text-center text-navy-900 mb-4">
             Ventajas de las Casas Prefabricadas
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Nuestro sistema constructivo ofrece múltiples beneficio:  El sistema constructivo de Hacer Vivir,  se basa en la implementación para muros  con  paneles autoportantes de concreto reforzado o también  con bloques de arcilla cocida, alargados y huecos, ambos materiales  representan dos alternativas diferentes y eficientes, los cuales  ensamblados mediante perfiles de lámina galvanizada sobre una cimentación de placa de concreto y sistema de amarre superior, se convierten en un  método vertical sismorresistente que cumple con la norma NSR-10, permitiendo realizar construcciones de hasta dos niveles de forma rápida y económica.
+          <p className="text-justify text-gray-800 text-lg mb-12 max-w-3xl mx-auto">
+            El sistema constructivo de Hacer Vivir, se basa en la implementación de muros con paneles autoportantes de concreto reforzado o también con bloques de arcilla cocida, alargados y huecos, ambos materiales representan dos alternativas diferentes y eficientes, los cuales ensamblados mediante perfiles de lámina galvanizada sobre una cimentación de placa de concreto y sistema de amarre superior, se convierten en un método vertical sismorresistente que cumple con la norma NSR-10, permitiendo realizar construcciones de hasta dos niveles de forma rápida y económica.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -222,7 +267,7 @@ function Home() {
                 <FaDollarSign className="text-6xl text-amber-500" />
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Economía</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800 text-lg text-justify">
                 Construye más por menos. Nuestras casas prefabricadas tienen un costo hasta un 40% menor comparado con la construcción tradicional, sin sacrificar calidad ni acabados. Una inversión inteligente para su proyecto.
               </p>
             </div>
@@ -231,7 +276,7 @@ function Home() {
                 <FaClock className="text-6xl text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Rapidez</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800 text-lg text-justify">
                 Este sistema constructivo permite que el tiempo de fabricación y ensamble sea menor en comparación con el tradicional.
               </p>
             </div>
@@ -240,7 +285,7 @@ function Home() {
                 <FaCheckCircle className="text-6xl text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Calidad y Respaldo</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800 text-lg text-justify">
                 Nuestra compañía cuenta con una experiencia de más de 23 años en el mercado e implementa los mejores materiales en sus proyectos.
               </p>
             </div>
@@ -252,7 +297,7 @@ function Home() {
                 <FaHandshake className="text-6xl text-purple-600" />
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Métodos de Pago</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800 text-lg text-justify">
                 Te ofrecemos diferentes alternativas de pago, recibimos tarjeta de crédito, ven y separa tu proyecto y afíliate al plan separe a mediano plazo.
               </p>
             </div>
@@ -261,7 +306,7 @@ function Home() {
                 <FaPencilAlt className="text-6xl text-orange-600" />
               </div>
               <h3 className="text-2xl font-bold text-navy-900 mb-3">Diseños</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800 text-lg text-justify">
                 Nuestro portafolio ofrece una gran variedad de diseños que se adaptan a la necesidad de cada cliente,
                 desde un nivel, dos niveles o tipo chalet.
               </p>
@@ -277,7 +322,7 @@ function Home() {
       <section id="visitanos" className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-navy-900 mb-8">Visítanos</h2>
-          <p className="text-center text-lg text-gray-700 mb-8">Av. Boyacá # 69b - 45, Bogotá</p>
+          <p className="text-justify text-lg text-gray-700 mb-8">Av. Boyacá # 69b - 45, Bogotá</p>
           <div className="max-w-4xl mx-auto">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6227817599344!2d-74.11361082507!3d4.692456595323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c5d8c8c8c8d%3A0x8c8c8c8c8c8c8c8c!2sAv.%20Boyac%C3%A1%20%2369b-45%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1234567890123!5m2!1ses!2sco"
@@ -286,7 +331,7 @@ function Home() {
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg" 
             ></iframe>
           </div>
         </div>
@@ -299,7 +344,7 @@ function Home() {
             <div>
               <img src={logo} alt="Hacer Vivir" className="h-16 mb-4 bg-white p-2 rounded" />
               <p className="text-gray-300">
-                Construimos el hogar de tus sueños con calidad, diseño y compromiso.
+                Construimos el hogar de tus sueños con calidad, diseño y compromiso,.
               </p>
             </div>
             <div>
